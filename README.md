@@ -1,37 +1,131 @@
-# ¿Cómo usar esta guia?
+# 🤖 ¿Cómo usar esta guía?
 
-## Notas
-Antes de comenzar con estos ejercicios asegurate de lo siguiente:
-* Estar en tu workspace de ROS2
-* Build 
-    
-        colcon build
+Esta guía está diseñada para ayudarte a aprender **ROS2 (Robot Operating System)** mediante ejercicios progresivos.  
+A medida que avances, los ejercicios se volverán más complicados para reforzar tu comprensión de **nodos, publicadores y suscriptores**.
 
-* Source el workspace 
-        
-        source install/setup.bash
+---
 
-EL repositorio esta pensado para que a medida que avances los ejercicios sean más retadores esto con el fin de que aprendas a los golpes como me lo enseñó mi papá. 
+# 📝 Notas importantes
 
-## Estrucutras del repositorio 
+Antes de comenzar con los ejercicios asegúrate de lo siguiente:
 
-El repositorio tiene ejercicios en 3 dificultades **1, 2, 3**.
+### 1️⃣ Estar dentro de tu workspace de ROS2
 
-// Aqui va un tree :v 
+```bash
+cd ~/ros2_ws
+```
 
-Explicacion de los niveles de dificulta:
+### 2️⃣ Construir el workspace
 
-## nivel 1 
+```bash
+colcon build
+```
+###  3️⃣ Activar (source) el workspace
 
-Estos ejercios son codigos básicos de python donde aprenderás como ejecutar nodos en conjunto y refinaras tus conocimientos de publicador - suscriptor para que ya puedas crear los tuyos propios.
+```bash
+source install/setup.bash
+```
 
-## nivel 2 
+### 📂 Estructura del repositorio
 
-El nivel 2 ya te pide que tu mismo crees el codigo, te encargas de crear nodos, que a partir de un publicador y suscriptor cumpliran tareas y automatizaras cálculos básicos.
-## nivel 3 
+El repositorio contiene ejercicios organizados por **niveles de dificultad:**
 
-Esta es la prueba final para saber si ya eres un artesano de los topicos, la idea es que le pases por parametros ( teclado ) los datos a tu publicador para que el suscriptor puedan hacer los cálculos necesarios para que se cumplan las tareas que se te piden.
+```bash
+Junior1-ROS2
+│
+├── nivel_1/
+│   ├── ejercicio_1
+│   ├── ejercicio_2
+│   ├── ejercicio_3
+│
+│
+├── nivel_2/
+│   ├── ejercicio_1
+│   ├── ejercicio_2
+│   ├── ejercicio_3
+│
+├── nivel_3/
+│   ├── ejercicio_1
+│   ├── ejercicio_2
+│   ├── ejercicio_3
+│
+└── nivel_extra/
+```
+Cada nivel introduce nuevos conceptos y mayor complejidad.
 
-## nivel extra
+### 🎯 Explicación de los niveles
+#### 🟢 Nivel 1 — Fundamentos
 
-Crea un publicador que le mande a un suscriptor los datos necesarios para que puedas mover un servo 45, 90 y 0 grados.
+Estos ejercicios contienen **código base en Python.**
+
+Aquí aprenderás:
+
+* Cómo ejecutar nodos en ROS2
+
+* Cómo funcionan los publicadores (publishers)
+
+* Cómo funcionan los suscriptores (subscribers)
+
+* Cómo conectar nodos entre sí mediante tópicos
+
+El objetivo es que entiendas la lógica básica para luego poder crear tus propios nodos.
+
+#### 🟡 Nivel 2 — Creación de nodos
+
+En este nivel ya deberás escribir tu propio código.
+
+Vas a crear nodos que:
+
+* Publiquen información
+
+* Reciban mensajes mediante suscriptores
+
+* Procesen datos
+
+* Automaticen cálculos básicos
+
+Aquí empezarás a construir sistemas más completos dentro de ROS2.
+
+#### 🔴 Nivel 3 — Integración de tópicos
+
+Este es el desafío final.
+
+La idea es que:
+
+* Recibas datos desde teclado
+
+* Los envíes mediante un publicador
+
+* Un suscriptor procese esa información
+
+* Se ejecuten las tareas solicitadas
+
+Si completas este nivel, ya tendrás una buena base para trabajar con tópicos en ROS2.
+
+⭐ Nivel Extra
+
+Crea un sistema donde:
+
+* Un publicador envíe comandos
+
+* Un suscriptor reciba los datos
+
+* Se controle un servo motor
+
+El servo debe poder moverse a:
+
+* 0°
+
+* 45°
+
+* 90°
+
+💡 Este ejercicio conecta ROS2 con hardware real, un paso importante en robótica.
+
+## 🚀 Objetivo de esta guía
+
+Que aprendas ROS2 **haciendo**, experimentando y resolviendo problemas reales.
+
+En robótica, la mejor forma de aprender es:
+
+**probar, equivocarse, arreglar y volver a intentar.**
